@@ -3,5 +3,5 @@
 Project Manager:\
 Programers: John Long, Henry Lee, Enes Elmasllari, Jeaden Oriol\
 Overall Creative Director: Enes Elmasllari\
-Scribe:\
+Scribe: Henry Lee\
 Time Manager: John Long
