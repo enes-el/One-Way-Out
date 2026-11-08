@@ -1,6 +1,6 @@
 # One Way Out
 
-Project Manager:\
+Project Manager: Jeaden Oriol\
 Programers: John Long, Henry Lee, Enes Elmasllari, Jeaden Oriol\
 Overall Creative Director: Enes Elmasllari\
 Scribe: Henry Lee\
