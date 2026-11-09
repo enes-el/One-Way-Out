@@ -1,21 +1,15 @@
 a:focus {
 	text-decoration: underline;
 }
-.table-title{
-    text-align: center;
-}
 .table-container{
     text-align: center;
     float: left;
-    font-weight: bold;
     background-color: #f2f2f2;
-    max-width: 250px;
-	min-width: 200px;
-	width: 15%;
-    padding: 1rem 1rem 1rem 1rem;
-    border-width: 2px;
+	width: 10%;
+    padding: 1rem 0rem 1rem 0rem;
     border-color: green;
 	border-style: solid;
+    background-image: url("images/owo-logo.png");
 }
 header {
     background-color:#c9ebcf
