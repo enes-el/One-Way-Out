@@ -1,31 +1,37 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-  <head>
-    <link href="style.css" rel="stylesheet">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>One Way Out</title>
-  </head>
-  <body>
-    <header>
-      <img src="assets\images\owo-logo-horizontal.png" alt="OWO Logo" style="max-width: 300px; width: 300px;" />
-    </header>
-    <div class="table-container">
-      <h1 class="table-title"> Home </h1>
-      <hr>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="diagrams.html">Diagrams</a></li>
-          <li><a href="slides.html">Slides</a></li>
-        </ul>
-      </nav>
-    </div>
-    <p>The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf or Canis familiaris when considered a distinct species) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore.</p>
-    
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>One Way Out</title>
+</head>
+
+<body>
+  <header>
+    <img src="assets\images\owo-logo-horizontal.png" alt="OWO Logo" style="max-width: 300px; width: 300px;" />
+  </header>
+  <div class="table-container">
+    <h1 class="table-title"> Home </h1>
+    <hr>
+    <nav>
+      <select onchange="window.location.href=this.value">
+        <option value=""> Home </option>
+        <option value="about.html">About</option>
+        <option value="resources.html">Resources</option>
+        <option value="diagrams.html">Diagrams</option>
+        <option value="slides.html">Slides</option>
+        </select>
+    </nav>
+  </div>
+  
+  <p>The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf or Canis familiaris when
+    considered a distinct species) is a member of the genus Canis (canines), which forms part of the wolf-like canids,
+    and is the most widely abundant terrestrial carnivore.</p>
 
 
-  </body>
+
+</body>
+
 </html>
