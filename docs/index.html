@@ -11,14 +11,27 @@
           <img src="assets/images/OWO-Transparent-Horizontal.png" alt="OWO Logo" style="max-width:250px; width: 250px; height: auto;" />
     </h1>
     </header>
+    <script type="text/javascript">
+      function goToNewPage() {
+        var selectElement = document.getElementById("pages");
+        var selectedValue = selectElement.value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      }
+    </script>
     <header style="padding: 20px; display: flex; align-items: center;">
       <label for="Pages"> Pages </label>
+      <form>
       <select name="pages" id="pages">
-        <option> Home </option>
-        <option> Resources </option>
-        <option> Diagrams </option>
-        <option> Slides </option>
+        <option value=""> Home </option>
+        <option value="about.html">About</option>
+        <option value="resources.html">Resources</option>
+        <option value="diagrams.html">Diagrams</option>
+        <option value="slides.html">Slides</option>
       </select>
+      <input type=button value="Go" onclick="goToNewPage()">
+      </form>
       <h2 style = "margin: 0;">Home</h2>
     </header>
     <p> A Point & Click Adventure Game </p>
