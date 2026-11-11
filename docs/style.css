@@ -9,6 +9,7 @@
     border-radius: 2rem 2rem 2rem 2rem;
     min-width: 100px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    font-family: 'Asap Sharp', Arial, sans-serif;
     transition: background-color 1s linear;
 }
 .table-container:hover {
@@ -25,6 +26,18 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
+.diagram {
+    text-align: center;
+    background-color: rgba(95, 245, 127, 0.212);
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.about {
+    text-align: center;
+    background-color: rgba(95, 245, 127, 0.212);
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
 .layout {
     display: flex;
     align-items: flex-start;
@@ -84,14 +97,6 @@ header {
     margin: 1rem auto;
     padding: 1rem;
     backdrop-filter: blur(6px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-main {
-    text-align: center;
-    padding: 1rem;
-    background-color: rgba(95, 245, 127, 0.212);
-    border-radius: 2rem 2rem 2rem 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
