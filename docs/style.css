@@ -2,21 +2,41 @@ a:focus {
 	text-decoration: underline;
 }
 .table-container{
+    backdrop-filter: blur(6px);
     text-align: center;
     float: left;
-    background-color: #f2f2f2;
 	width: 10%;
     padding: 1rem 0rem 1rem 0rem;
-    border-color: green;
+    border-color:rgba(255, 250, 240, 0.26);
+    background-color: rgba(255, 18, 18, 0.212); 
+    color:floralwhite;
 	border-style: solid;
-    background-image: url("images/owo-logo.png");
-}
-header {
-    background-color:#c9ebcf
+    border-width: 1px;
+    backdrop-filter: blur(6px);
+    border-radius: 6px;
+    min-width: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);    
 }
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     clear: both;
+}
+header {
+    background-color: rgba(255, 18, 18, 0.212); 
+    margin: 1rem auto; 
+    border-radius: 6px;
+    padding: 1rem;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);    
+}
+body {
+    background-image: url("assets/images/gas-station.jpg");
+    background-size: cover;          
+    background-position: center;     
+    background-attachment: fixed;    
+    min-height: 100vh;               
+    background-color: #000000;
+    color: floralwhite;
 }
