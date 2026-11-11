@@ -1,42 +1,83 @@
-a:focus {
-	text-decoration: underline;
-}
-.table-container{
+.table-container {
     backdrop-filter: blur(6px);
     text-align: center;
-    float: left;
-	width: 10%;
+    width: 10%;
     padding: 1rem 0rem 1rem 0rem;
-    border-color:rgba(255, 250, 240, 0.26);
-    background-color: rgba(255, 18, 18, 0.212); 
-    color:floralwhite;
-	border-style: solid;
-    border-width: 1px;
+    background-color: rgba(95, 245, 127, 0.212);
+    color: floralwhite;
     backdrop-filter: blur(6px);
-    border-radius: 6px;
+    border-radius: 2rem 2rem 2rem 2rem;
     min-width: 100px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 1s linear;
 }
+.table-container:hover {
+    background-color: red;
+    color: blue;
+    transition: all 1s ease;
+}
+.page {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(95, 245, 127, 0.212);
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.content {
+    flex: 1;                
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;               
+}
+
+.layout::after {
+    content: "";
+    width: 10%;
+    min-width: 100px;
+}
+
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     clear: both;
 }
+
 header {
-    background-color: rgba(255, 18, 18, 0.212); 
-    margin: 1rem auto; 
-    border-radius: 6px;
+    border-color: rgba(255, 250, 240, 0.26);
+    border-width: 1px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgba(95, 245, 127, 0.212);
+    margin: 1rem auto;
     padding: 1rem;
     backdrop-filter: blur(6px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
+
+main {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(95, 245, 127, 0.212);
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 body {
-    background-image: url("assets/images/gas-station.jpg");
-    background-size: cover;          
-    background-position: center;     
-    background-attachment: fixed;    
-    min-height: 100vh;               
+    background-image: url("assets/images/lot.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
     background-color: #000000;
     color: floralwhite;
+    font-family: 'Asap Sharp', Arial, sans-serif;
 }

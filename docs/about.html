@@ -1,29 +1,39 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-  <head>
-    <link href="style.css" rel="stylesheet">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>One Way Out</title>
-  </head>
-  <body>
-    <header>
-      <img src="assets\images\owo-logo-horizontal.png" alt="OWO Logo" style="max-width: 300px; width: 300px;" />
-    </header>
-    <div class="table-container">
-    <h1>About</h1>
-    <hr>
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Asap Sharp' rel='stylesheet'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>One Way Out</title>
+</head>
+
+<body>
+  <header>
+    <img src="assets/images/owo-logo-horizontal.png" alt="OWO Logo" style="max-width: 300px; width: 300px;" />
+  </header>
+<div class="layout">
+  <div class="table-container">
     <nav>
       <select onchange="window.location.href=this.value">
         <option value="">About</option>
-        <option value="index.html"> Home </option>
+        <option value="index.html">Home</option>
         <option value="resources.html">Resources</option>
         <option value="diagrams.html">Diagrams</option>
         <option value="slides.html">Slides</option>
       </select>
     </nav>
-    </div>
+  </div>
 
+  <div class="content">
+    <h1 class="page">About</h1>
+    <main>
+      <!-- the rest of your page text goes here -->
+    </main>
+  </div>
+</div>
 
-  </body>
+</body>
+
 </html>
