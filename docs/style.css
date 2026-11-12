@@ -110,3 +110,50 @@ body {
     color: floralwhite;
     font-family: 'Asap Sharp', Arial, sans-serif;
 }
+
+.screencaptures{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(95, 245, 127, 0.212);
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.screencapture-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.screencapture-row-img{
+    flex: 1 1 120px;
+    max-width: 220px;
+    margin: 0;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.game-link{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.play-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: floralwhite;
+    text-decoration: none;
+    background-color: rgba(95, 245, 127, 0.212);
+    backdrop-filter: blur(6px);
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 1s ease;
+}
+
+.play-button:hover {
+    background-color: rgba(95, 245, 128, 0.651);
+}
