@@ -157,3 +157,48 @@ body {
 .play-button:hover {
     background-color: rgba(95, 245, 128, 0.651);
 }
+.team-container {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: rgba(95, 245, 127, 0.212);
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-top: 1rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.team-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 0 auto 0.75rem auto;
+}
+
+.team-member {
+    flex: 1 1 220px;
+    text-align: center;
+}
+
+.team-info h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+}
+
+.team-info p {
+    margin: 0.15rem 0;
+    font-size: 0.9rem;
+}
+
+.team-info a {
+    color: floralwhite;
+}
