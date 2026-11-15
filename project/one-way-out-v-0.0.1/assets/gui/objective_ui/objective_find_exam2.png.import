@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbuvckg7lk608"
-path="res://.godot/imported/objective_find_exam2png.png-df8582cb7e96a881da24cd2a780d424c.ctex"
+uid="uid://ct7akwri5a2a2"
+path="res://.godot/imported/objective_find_exam2.png-a6bff958a2b7dd05aff2f2bbf86eb5af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/gui/objective_ui/objective_find_exam2png.png"
-dest_files=["res://.godot/imported/objective_find_exam2png.png-df8582cb7e96a881da24cd2a780d424c.ctex"]
+source_file="res://assets/gui/objective_ui/objective_find_exam2.png"
+dest_files=["res://.godot/imported/objective_find_exam2.png-a6bff958a2b7dd05aff2f2bbf86eb5af.ctex"]
 
 [params]
 
