@@ -1,11 +1,3 @@
 [gd_scene format=3 uid="uid://cg1stual6dttp"]
 
 [node name="Game" type="Node2D" unique_id=514956111]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1611168859]
-
-[node name="MainMenu" type="Control" parent="CanvasLayer" unique_id=1747818572]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
