@@ -167,3 +167,7 @@ texture = ExtResource("3_4mcyf")
 position = Vector2(950, 210.00002)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_lmpih")
+
+[node name="CanvasGroup" type="CanvasGroup" parent="." unique_id=2110373867]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=64242812]
