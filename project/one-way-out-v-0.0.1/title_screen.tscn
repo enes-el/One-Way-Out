@@ -1,19 +1,22 @@
 [gd_scene format=3 uid="uid://bud4lfa0c62bq"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_e2o6t"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1s85s"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mwb40"]
 font_size = 45
 shadow_color = Color(0, 0, 0, 1)
 
 [node name="main_menu" type="Node2D" unique_id=156071691]
+material = SubResource("CanvasItemMaterial_1s85s")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=466879952]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1198391642]
-material = SubResource("ShaderMaterial_e2o6t")
-offset_right = 1151.0
-offset_bottom = 645.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.8789201, 0.3771747, 1.540184e-06, 1)
 
 [node name="TitleLabel" type="Label" parent="CanvasLayer" unique_id=1392185838]
