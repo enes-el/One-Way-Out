@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://db4tv1rmq7i52"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3h1hb"]
-load_path = "res://.godot/imported/basement.png-97d219fdf770d8daefa8317c54776f1e.ctex"
+[ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_sp2du"]
 
 [node name="tutorial_level" type="Node2D" unique_id=1710577979]
 
@@ -12,3 +11,13 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = SubResource("CompressedTexture2D_3h1hb")
 expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1445498388]
+offset_right = 1151.0
+offset_bottom = 647.0
+expand_mode = 1
+
+[node name="ObjectiveFindKey" type="Sprite2D" parent="." unique_id=128284413]
+position = Vector2(578, 85)
+scale = Vector2(0.121215835, 0.09240723)
+texture = ExtResource("2_tfbhh")
