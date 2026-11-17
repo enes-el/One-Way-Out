@@ -14,7 +14,7 @@ shadow_color = Color(0, 0, 0, 1)
 material = SubResource("ShaderMaterial_e2o6t")
 offset_right = 1151.0
 offset_bottom = 645.0
-color = Color(1, 0.44705883, 0.28235295, 1)
+color = Color(0.8789201, 0.3771747, 1.540184e-06, 1)
 
 [node name="TitleLabel" type="Label" parent="CanvasLayer" unique_id=1392185838]
 offset_right = 1156.0

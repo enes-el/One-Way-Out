@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://db4tv1rmq7i52"]
+
+[ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_sp2du"]
+
+[node name="tutorial_level" type="Node2D" unique_id=1710577979]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=798634900]
+offset_right = 1148.0
+offset_bottom = 646.0
+texture = ExtResource("1_sp2du")
+expand_mode = 1
