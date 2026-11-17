@@ -16,7 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.8789201, 0.3771747, 1.540184e-06, 1)
+color = Color(0.3764706, 0.9607843, 0.49803922, 1)
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=864077428]
 anchors_preset = 5
@@ -36,10 +36,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -0.315979
-offset_top = -2.4039917
-offset_right = 0.315979
-offset_bottom = 2.4039917
+offset_left = -107.0
+offset_top = 2.5
+offset_right = 111.0
+offset_bottom = 103.5
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
@@ -47,5 +47,20 @@ script = ExtResource("2_ak2if")
 
 [node name="Start" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=295414381]
 layout_mode = 2
+action_mode = 0
 text = "Start
 "
+
+[node name="Settings" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=260218245]
+layout_mode = 2
+action_mode = 0
+text = "Settings
+
+"
+
+[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=156319043]
+layout_mode = 2
+text = "Exit
+"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Start" to="CanvasLayer/VBoxContainer" method="_on_start_pressed"]
