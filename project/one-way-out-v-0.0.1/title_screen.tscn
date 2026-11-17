@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://bud4lfa0c62bq"]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1s85s"]
+[ext_resource type="Texture2D" uid="uid://dugoyy1fe1fsd" path="res://assets/logo/owo_logo_horizontal.png" id="1_v6p8y"]
+[ext_resource type="Script" uid="uid://d280lc83xpuol" path="res://title_screen_script.gd" id="2_ak2if"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_mwb40"]
-font_size = 45
-shadow_color = Color(0, 0, 0, 1)
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1s85s"]
 
 [node name="main_menu" type="Node2D" unique_id=156071691]
 material = SubResource("CanvasItemMaterial_1s85s")
@@ -19,9 +18,34 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.8789201, 0.3771747, 1.540184e-06, 1)
 
-[node name="TitleLabel" type="Label" parent="CanvasLayer" unique_id=1392185838]
-offset_right = 1156.0
-offset_bottom = 54.0
-text = "One Way Out"
-label_settings = SubResource("LabelSettings_mwb40")
-horizontal_alignment = 1
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=864077428]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -347.0
+offset_top = 1.0
+offset_right = 351.9906
+offset_bottom = 187.0
+grow_horizontal = 2
+texture = ExtResource("1_v6p8y")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=298274928]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.315979
+offset_top = -2.4039917
+offset_right = 0.315979
+offset_bottom = 2.4039917
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("2_ak2if")
+
+[node name="Start" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=295414381]
+layout_mode = 2
+text = "Start
+"
