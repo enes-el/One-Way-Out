@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cg1stual6dttp"]
+
+[ext_resource type="Script" uid="uid://dypcqyntma5rp" path="res://gui_script.gd" id="1_lucsk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b3lof"]
+font_size = 45
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Game" type="Node2D" unique_id=514956111]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1208950808]
+script = ExtResource("1_lucsk")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=330633210]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3764706, 0.9607843, 0.49803922, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="CanvasLayer" unique_id=289109499]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -87.0
+offset_right = 87.0
+offset_bottom = 63.0
+grow_horizontal = 2
+text = "Settings"
+label_settings = SubResource("LabelSettings_b3lof")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=361333873]
+offset_left = 469.0
+offset_top = 386.5
+offset_right = 509.0
+offset_bottom = 426.5
+
+[node name="Volumn" type="Label" parent="CanvasLayer/HBoxContainer" unique_id=1661321549]
+layout_mode = 2
+text = "Volumn: DOESN'T WORK"
+
+[node name="VSlider" type="VSlider" parent="CanvasLayer/HBoxContainer" unique_id=1857818744]
+layout_mode = 2

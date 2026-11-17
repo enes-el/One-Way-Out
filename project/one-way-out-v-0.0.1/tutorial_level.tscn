@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://db4tv1rmq7i52"]
 
-[ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_sp2du"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3h1hb"]
+load_path = "res://.godot/imported/basement.png-97d219fdf770d8daefa8317c54776f1e.ctex"
 
 [node name="tutorial_level" type="Node2D" unique_id=1710577979]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=798634900]
 offset_right = 1148.0
 offset_bottom = 646.0
-texture = ExtResource("1_sp2du")
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = SubResource("CompressedTexture2D_3h1hb")
 expand_mode = 1
