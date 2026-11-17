@@ -40,7 +40,11 @@ offset_bottom = 426.5
 
 [node name="Volumn" type="Label" parent="CanvasLayer/HBoxContainer" unique_id=1661321549]
 layout_mode = 2
-text = "Volumn: DOESN'T WORK"
+text = "Volume: DOESN'T WORK"
+
+[node name="Volumn" type="Label" parent="CanvasLayer/HBoxContainer/Volumn" unique_id=1642114575]
+layout_mode = 0
+text = "Volume: DOESN'T WORK"
 
 [node name="VSlider" type="VSlider" parent="CanvasLayer/HBoxContainer" unique_id=1857818744]
 layout_mode = 2
