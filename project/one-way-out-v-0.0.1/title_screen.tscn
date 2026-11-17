@@ -1,33 +1,14 @@
 [gd_scene format=3 uid="uid://bud4lfa0c62bq"]
 
-[ext_resource type="Script" uid="uid://dypcqyntma5rp" path="res://gui_script.gd" id="1_ig5kc"]
 [ext_resource type="Texture2D" uid="uid://dugoyy1fe1fsd" path="res://assets/logo/owo_logo_horizontal.png" id="1_v6p8y"]
+[ext_resource type="Script" uid="uid://cdvyodrikol5x" path="res://button_script.gd" id="2_ak2if"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1s85s"]
-
-[sub_resource type="GDScript" id="GDScript_ak2if"]
-script/source = "extends VBoxContainer
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
-func _on_start_pressed() -> void:
-	pass # Replace with function body.
-"
 
 [node name="main_menu" type="Node2D" unique_id=156071691]
 material = SubResource("CanvasItemMaterial_1s85s")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=466879952]
-script = ExtResource("1_ig5kc")
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1198391642]
 anchors_preset = 15
@@ -62,7 +43,7 @@ offset_bottom = 103.5
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
-script = SubResource("GDScript_ak2if")
+script = ExtResource("2_ak2if")
 
 [node name="Start" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=295414381]
 layout_mode = 2
@@ -77,9 +58,11 @@ text = "Settings
 
 "
 
-[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=156319043]
+[node name="Exit" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=156319043]
 layout_mode = 2
 text = "Exit
 "
 
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/Start" to="CanvasLayer/VBoxContainer" method="_on_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Settings" to="CanvasLayer/VBoxContainer" method="_on_settings_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Exit" to="CanvasLayer/VBoxContainer" method="_on_exit_pressed"]

@@ -13,6 +13,8 @@ config_version=5
 config/name="one way out v0.0.1"
 run/main_scene="uid://bud4lfa0c62bq"
 config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0.5148968, 0.51258695, 0.4309351, 0)
+boot_splash/image="uid://dgbtsa13mbmqx"
 config/icon="res://icon.svg"
 
 [display]
