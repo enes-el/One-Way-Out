@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c0jks56cggi38"]
 
 [ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_b3lfv"]
+[ext_resource type="Texture2D" uid="uid://mnexoke03vpd" path="res://assets/gui/objective_ui/objective_find_key.png" id="2_a3h1k"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1s85s"]
 
@@ -24,3 +25,11 @@ offset_left = 1007.0
 offset_top = 224.0
 offset_right = 1126.0
 offset_bottom = 301.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=204014869]
+offset_left = 434.0
+offset_top = -11.0
+offset_right = 695.0
+offset_bottom = 211.0
+texture = ExtResource("2_a3h1k")
+expand_mode = 1
