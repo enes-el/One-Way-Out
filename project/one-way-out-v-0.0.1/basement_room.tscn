@@ -67,6 +67,7 @@ offset_bottom = 301.0
 layout_mode = 0
 offset_right = 245.0
 offset_bottom = 186.0
+focus_mode = 0
 
 [node name="Items" type="Control" parent="CanvasLayer" unique_id=865148914]
 layout_mode = 3
