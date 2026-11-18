@@ -1,5 +1,10 @@
 extends Node2D
 
+var room_name: String
+var room_type: String
+var reqPuzzle: String
+var isCompleted: bool = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
