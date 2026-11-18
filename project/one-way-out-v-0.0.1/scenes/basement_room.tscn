@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://c0jks56cggi38"]
+
+[ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_b3lfv"]
+[ext_resource type="Script" uid="uid://bpmof0x8h7css" path="res://game_manager.gd" id="1_hk2va"]
+[ext_resource type="Texture2D" uid="uid://mnexoke03vpd" path="res://assets/gui/objective_ui/objective_find_key.png" id="2_a3h1k"]
+[ext_resource type="Texture2D" uid="uid://dsu1p15oym50o" path="res://assets/gui/key_ui/basement_key.png" id="3_gqg8m"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1s85s"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fboa8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b3lof"]
+font_size = 32
+
+[node name="game" type="Node2D" unique_id=156071691]
+material = SubResource("CanvasItemMaterial_1s85s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1512073466]
+script = ExtResource("1_hk2va")
+
+[node name="Background" type="TextureRect" parent="CanvasLayer" unique_id=811804298]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_b3lfv")
+expand_mode = 1
+
+[node name="ObjectiveGUI" type="TextureRect" parent="CanvasLayer" unique_id=204014869]
+offset_left = 434.0
+offset_top = -11.0
+offset_right = 695.0
+offset_bottom = 211.0
+texture = ExtResource("2_a3h1k")
+expand_mode = 1
+
+[node name="Interactables" type="Control" parent="CanvasLayer" unique_id=290167141]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoxButton" type="TextureButton" parent="CanvasLayer/Interactables" unique_id=958925649]
+layout_mode = 0
+offset_left = 1007.0
+offset_top = 224.0
+offset_right = 1126.0
+offset_bottom = 301.0
+
+[node name="DoorButton" type="TextureButton" parent="CanvasLayer/Interactables" unique_id=2077450046]
+layout_mode = 0
+offset_right = 245.0
+offset_bottom = 186.0
+
+[node name="Items" type="Control" parent="CanvasLayer" unique_id=865148914]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -292.0
+offset_bottom = 193.0
+grow_horizontal = 0
+
+[node name="Key" type="Sprite2D" parent="CanvasLayer/Items" unique_id=37035549]
+position = Vector2(190, 2.0000114)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("3_gqg8m")
+centered = false
+
+[node name="Puzzle GUI" type="Control" parent="CanvasLayer" unique_id=509239201]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 340.0
+offset_top = 177.0
+offset_right = 788.0
+offset_bottom = 491.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Puzzle GUI" unique_id=1712021043]
+layout_mode = 0
+offset_right = 441.0
+offset_bottom = 315.0
+texture = SubResource("PlaceholderTexture2D_fboa8")
+
+[node name="Question" type="Label" parent="CanvasLayer/Puzzle GUI" unique_id=529873350]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Mathing:
+1+1 = ?"
+label_settings = SubResource("LabelSettings_b3lof")
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer/Puzzle GUI" unique_id=2010437241]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 7.0
+offset_right = 425.0
+offset_bottom = 294.0
+text = "
+"
+placeholder_text = "Type in Here
+"

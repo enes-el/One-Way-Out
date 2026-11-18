@@ -1,7 +1,6 @@
-[gd_scene format=3 uid="uid://bud4lfa0c62bq"]
+[gd_scene format=3 uid="uid://b6qpjdh2ngfic"]
 
 [ext_resource type="Texture2D" uid="uid://dugoyy1fe1fsd" path="res://assets/logo/owo_logo_horizontal.png" id="1_v6p8y"]
-[ext_resource type="Script" uid="uid://cdvyodrikol5x" path="res://button_script.gd" id="2_ak2if"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1s85s"]
 
@@ -43,7 +42,6 @@ offset_bottom = 103.5
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
-script = ExtResource("2_ak2if")
 
 [node name="Start" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=295414381]
 layout_mode = 2
