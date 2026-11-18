@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_b3lfv"]
 [ext_resource type="Script" uid="uid://bpmof0x8h7css" path="res://script/game_manager.gd" id="1_hk2va"]
-[ext_resource type="Script" uid="uid://c1hno8ir5lgs" path="res://script/room.gd" id="1_l46av"]
 [ext_resource type="Texture2D" uid="uid://mnexoke03vpd" path="res://assets/gui/objective_ui/objective_find_key.png" id="2_a3h1k"]
 [ext_resource type="Texture2D" uid="uid://dsu1p15oym50o" path="res://assets/gui/key_ui/basement_key.png" id="3_gqg8m"]
+[ext_resource type="Texture2D" uid="uid://cpflnkgfeupot" path="res://assets/gui/objective_ui/objective_escape_basement.png" id="4_u2ybg"]
 [ext_resource type="Script" uid="uid://bu8htvg7bgg4r" path="res://script/puzzle.gd" id="6_jnpgp"]
 [ext_resource type="Texture2D" uid="uid://bubeuwadlgh15" path="res://assets/gui/question_box.png" id="6_uw5cd"]
 [ext_resource type="Texture2D" uid="uid://6n5xth5q4b5x" path="res://assets/gui/button/confirm_button.png" id="8_u2ybg"]
@@ -14,11 +14,8 @@
 [sub_resource type="LabelSettings" id="LabelSettings_b3lof"]
 font_size = 32
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2ybg"]
-
 [node name="game" type="Node2D" unique_id=156071691]
 material = SubResource("CanvasItemMaterial_1s85s")
-script = ExtResource("1_l46av")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1512073466]
 script = ExtResource("1_hk2va")
@@ -32,12 +29,20 @@ grow_vertical = 2
 texture = ExtResource("1_b3lfv")
 expand_mode = 1
 
-[node name="ObjectiveGUI" type="TextureRect" parent="CanvasLayer" unique_id=204014869]
+[node name="ObjectiveGUIKey" type="TextureRect" parent="CanvasLayer" unique_id=204014869]
 offset_left = 434.0
 offset_top = -11.0
 offset_right = 695.0
 offset_bottom = 211.0
 texture = ExtResource("2_a3h1k")
+expand_mode = 1
+
+[node name="ObjectiveGUIEscape" type="TextureRect" parent="CanvasLayer" unique_id=510062778]
+offset_left = 433.0
+offset_top = -13.0
+offset_right = 694.0
+offset_bottom = 209.0
+texture = ExtResource("4_u2ybg")
 expand_mode = 1
 
 [node name="Interactables" type="Control" parent="CanvasLayer" unique_id=290167141]
@@ -100,19 +105,14 @@ offset_bottom = 100.0
 text = "Mathing: 1+1 = ?"
 label_settings = SubResource("LabelSettings_b3lof")
 
-[node name="TextEdit" type="TextEdit" parent="CanvasLayer/PuzzleGUI" unique_id=2010437241]
+[node name="UserInput" type="LineEdit" parent="CanvasLayer/PuzzleGUI" unique_id=832471026]
 layout_mode = 0
 offset_left = 104.0
-offset_top = 151.0
-offset_right = 338.0
-offset_bottom = 232.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_u2ybg")
-text = "
-"
-placeholder_text = "Type in Here
-"
+offset_top = 152.0
+offset_right = 337.0
+offset_bottom = 233.0
 
-[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/PuzzleGUI" unique_id=1398744958]
+[node name="ConfirmButtonSprite" type="TextureRect" parent="CanvasLayer/PuzzleGUI" unique_id=1398744958]
 layout_mode = 0
 offset_left = 87.0
 offset_top = 229.0
@@ -121,16 +121,16 @@ offset_bottom = 499.0
 texture = ExtResource("8_u2ybg")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="CanvasLayer/PuzzleGUI/TextureRect2" unique_id=74531886]
+[node name="ConfirmButton" type="Button" parent="CanvasLayer/PuzzleGUI" unique_id=74531886]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 46.0
-offset_top = 80.0
-offset_right = 809.5459
-offset_bottom = 276.8418
+offset_left = 133.0
+offset_top = 309.0
+offset_right = 896.5459
+offset_bottom = 505.8418
 scale = Vector2(0.23967126, 0.25909135)
 expand_icon = true
 
 [connection signal="pressed" from="CanvasLayer/Interactables/BoxButton" to="CanvasLayer" method="_on_box_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Interactables/DoorButton" to="CanvasLayer" method="_on_door_button_pressed"]
-[connection signal="text_changed" from="CanvasLayer/PuzzleGUI/TextEdit" to="CanvasLayer/PuzzleGUI" method="_on_text_edit_text_changed"]
+[connection signal="pressed" from="CanvasLayer/PuzzleGUI/ConfirmButton" to="CanvasLayer" method="_on_confirm_button_pressed"]

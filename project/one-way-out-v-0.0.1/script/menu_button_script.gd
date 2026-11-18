@@ -1,5 +1,12 @@
 extends VBoxContainer
 
+@onready var exit_button: Button = $Exit
+
+# Hide the Exit button when playing in a web browser.
+func _ready() -> void:
+	if OS.has_feature("web"):
+		exit_button.hide()
+
 # Uses signals from start button to change to basement/tutorial scene.
 func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://basement_room.tscn")
