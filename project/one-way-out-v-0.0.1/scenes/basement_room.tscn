@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c0jks56cggi38"]
 
 [ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_b3lfv"]
-[ext_resource type="Script" uid="uid://bpmof0x8h7css" path="res://game_manager.gd" id="1_hk2va"]
+[ext_resource type="Script" uid="uid://bpmof0x8h7css" path="res://script/game_manager.gd" id="1_hk2va"]
 [ext_resource type="Texture2D" uid="uid://mnexoke03vpd" path="res://assets/gui/objective_ui/objective_find_key.png" id="2_a3h1k"]
 [ext_resource type="Texture2D" uid="uid://dsu1p15oym50o" path="res://assets/gui/key_ui/basement_key.png" id="3_gqg8m"]
 
@@ -71,7 +71,6 @@ texture = ExtResource("3_gqg8m")
 centered = false
 
 [node name="Puzzle GUI" type="Control" parent="CanvasLayer" unique_id=509239201]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 340.0
@@ -103,3 +102,5 @@ text = "
 "
 placeholder_text = "Type in Here
 "
+
+[connection signal="pressed" from="CanvasLayer/Interactables/DoorButton" to="CanvasLayer" method="_on_door_button_pressed"]
