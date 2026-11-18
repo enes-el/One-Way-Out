@@ -10,7 +10,6 @@ var exit_unlocked: bool = false
 @onready var obj_gui_exit_basement: TextureRect = $ObjectiveGUIEscape
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	puzzle_gui.hide()
 	key.hide()
