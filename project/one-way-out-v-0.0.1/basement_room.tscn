@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://5hq6rdv1jaec"]
+[gd_scene format=3 uid="uid://c0jks56cggi38"]
 
 [ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_b3lfv"]
 [ext_resource type="Script" uid="uid://bpmof0x8h7css" path="res://script/game_manager.gd" id="1_hk2va"]
