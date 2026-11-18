@@ -26,6 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("1_b3lfv")
 expand_mode = 1
 
@@ -34,6 +35,7 @@ offset_left = 434.0
 offset_top = -11.0
 offset_right = 695.0
 offset_bottom = 211.0
+mouse_filter = 2
 texture = ExtResource("2_a3h1k")
 expand_mode = 1
 
@@ -42,6 +44,7 @@ offset_left = 433.0
 offset_top = -13.0
 offset_right = 694.0
 offset_bottom = 209.0
+mouse_filter = 2
 texture = ExtResource("4_u2ybg")
 expand_mode = 1
 
