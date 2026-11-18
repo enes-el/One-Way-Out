@@ -71,6 +71,7 @@ texture = ExtResource("3_gqg8m")
 centered = false
 
 [node name="Puzzle GUI" type="Control" parent="CanvasLayer" unique_id=509239201]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 340.0
