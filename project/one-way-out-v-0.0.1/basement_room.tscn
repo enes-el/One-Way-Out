@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bftiexwnm62ci" path="res://assets/rooms/basement.png" id="1_b3lfv"]
 [ext_resource type="Script" uid="uid://bpmof0x8h7css" path="res://script/game_manager.gd" id="1_hk2va"]
+[ext_resource type="Script" uid="uid://c1hno8ir5lgs" path="res://script/room.gd" id="1_l46av"]
 [ext_resource type="Texture2D" uid="uid://mnexoke03vpd" path="res://assets/gui/objective_ui/objective_find_key.png" id="2_a3h1k"]
 [ext_resource type="Texture2D" uid="uid://dsu1p15oym50o" path="res://assets/gui/key_ui/basement_key.png" id="3_gqg8m"]
 
@@ -14,6 +15,7 @@ font_size = 32
 
 [node name="game" type="Node2D" unique_id=156071691]
 material = SubResource("CanvasItemMaterial_1s85s")
+script = ExtResource("1_l46av")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1512073466]
 script = ExtResource("1_hk2va")
@@ -71,6 +73,7 @@ texture = ExtResource("3_gqg8m")
 centered = false
 
 [node name="Puzzle GUI" type="Control" parent="CanvasLayer" unique_id=509239201]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 340.0
@@ -103,4 +106,5 @@ text = "
 placeholder_text = "Type in Here
 "
 
+[connection signal="pressed" from="CanvasLayer/Interactables/BoxButton" to="CanvasLayer" method="_on_box_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Interactables/DoorButton" to="CanvasLayer" method="_on_door_button_pressed"]
